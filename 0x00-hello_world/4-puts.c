@@ -1,7 +1,7 @@
 #include <stadio.n>
 /**
- * main - A program thatn prints a line with puts function
- * return: 0 (success)
+ * main - A program that prints a line with puts function
+ * return: 0 (Success)
  * */
 int  main(void)
 {
