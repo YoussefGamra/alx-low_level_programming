@@ -6,9 +6,9 @@
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
- *Description: 'check for numbre if it is positive or nigative'
- *Return: Always 0
-/ *
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
