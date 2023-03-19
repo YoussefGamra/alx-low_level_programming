@@ -1,17 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - main function
- *  
- * Return: always 0
+ * main - Entry point
+ *
+ * Description: print all alphabet letters
+ *
+ * Return: always 0 (Success)
  */
 
 int main(void)
 { 
-	char i;
+	char ch = 'a';
 
-	for (i = 'a' ; i <= 'z' ; i++)
-	putchar(i);
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
 	putchar('\n');
+
 	return (0);
 }
