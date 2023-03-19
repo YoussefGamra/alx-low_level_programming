@@ -3,8 +3,6 @@
 /**
  * mai - Enty point
  *
- * Description: print alphabet in lowercase then in uppercase
- *
  * Return: Alwys 0 (Seccess)
  */
 
