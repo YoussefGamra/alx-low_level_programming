@@ -1,35 +1,35 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - Program that prints the result adds positive numbers
- * @argc: count
- * @argv: array
- *
- * Return: Always 0
- **/
+ * main -  print name
+ *@argc: int.
+ *@argv: char.
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
-	int i, j, add = 0, stop;
+	int i;
+	int j;
+	int sum = 0;
 
+	if (argc < 2)
+	{
+		printf("0\n");
+		return (0);
+	}
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; *(*(argv + i) + j); j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			stop = 1;
-			if (*(*(argv + i) + j) >= 48 && *(*(argv + i) + j) <= 57)
-			{
-				stop = 0;
-			} else
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-
-			if (stop == 0)
-				add = add + atoi(*(argv + i));
+		sum = sum + atoi(argv[i]);
 	}
-	printf("%d\n", add);
+	printf("%d\n", sum);
 	return (0);
 }
